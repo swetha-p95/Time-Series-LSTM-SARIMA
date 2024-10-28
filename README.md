@@ -5,6 +5,9 @@ In this code, we have used the solar irradiance and earth skin temperature data 
 We can see that the Seasonal ARIMA model and LSTM model with 12 outputs (single stage prediction) give the best results. The ARIMA model does not capture the seasonality in the data, so it does not give good results. The LSTM model with 1 output (12 step prediction) gives the worst results despite having very low training losses. This is because we add the predictions back into the data at each stage and this causes errors to accumulate.
 
  The solar irradiance and earth skin temperature data was obtained from the LARC Power Project NASA website.
+
+We chose the Sun Power E20/435 solar cell for our analysis, and from the data sheet obtained the following parameters: 
  
-![image](https://github.com/user-attachments/assets/ca6bfa72-09d8-48bc-93d7-c4c606d2e912)
+![image](https://github.com/user-attachments/assets/ef37ce37-2832-4e17-a0c5-7141c941897e)
+
 
